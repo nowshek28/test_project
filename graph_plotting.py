@@ -5,5 +5,5 @@ class plot_data(pd.DataFrame):
     def __init__(self, data):
         self.Data = data
 
-    def __getitems__(self):
+    def plot_chart(self):
         self.Data.plot(x='timestamp', y= 'price')
